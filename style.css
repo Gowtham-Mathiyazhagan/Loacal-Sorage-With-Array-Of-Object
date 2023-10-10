@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,200;1,700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+  }
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 450px;
+    min-height: 100px;
+    margin: 0px auto;
+    background-color:rgb(241, 238, 238) ;
+    padding: 15px;
+}
+h1{
+    font-size:18px;
+    text-align: center;
+    font-weight: 500;
+    color: rgb(32, 17, 250);
+}
+h3{
+    font-size: 15px;
+    font-weight: 300;
+    margin: 10px 0px;
+}
+input,select{
+    display: block;
+    width: 250px;
+    padding: 5px;
+    outline: none;
+    font-size: 12px;
+    margin-top: 5spx;
+
+}
+label{
+    font-size: 13px;
+    margin-top: 10px;
+}
+:is(input,select):focus{
+border: 1.5px solid black;
+}
+form>button{
+    padding: 5px 16px;
+    margin-top: 10px;
+}
+table{
+border-collapse: collapse;
+font-size: 13px;
+font-weight: 800;
+/* margin-left: 10%; */
+}
+
+td{
+    padding: 5px 15px;
+}
+tbody tr{
+  font-size: 12px;
+  font-weight: 200;
+  border-top: 1px solid #fff;
+}
+tbody tr:hover{
+background-color: white;
+}
+tbody tr td button{
+    padding: 1px 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.modify>h3{
+    color: orange;
+}
+.model{
+height: 100%;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+position: fixed;
+top: 0;
+left: 0;
+z-index: 5;
+display: none;
+}
+.modify{
+margin: 70px auto;
+    background-color: white;
+    width: 300px;
+    padding: 10px;
+}
+span{
+    float: right;
+    font-size: 25px;
+    color: #575555;
+    font-weight: 700;
+    line-height: 50px;
+    cursor: pointer;
+}
+span:hover{
+color: black;
+}
+.modify>button{
+    margin-top: 8px;
+}

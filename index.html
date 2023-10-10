@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <form id="formsubmit">
+        <h1>curd ope
+            ration with local storage</h1>
+        <h3>User information:</h3>
+        <label for="username">Enter name</label>
+        <input type="text" id="username" required>
+        <label for="userage">Age</label>
+        <input type="number " id="userage">
+        <label>Gender</label>
+
+        <select id="usergender" required>
+            <option value="">Select gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+
+        <button id="subbtn">Submit</button>
+    </form>
+ 
+    <h3>User Stored Data:</h3>
+    <table>
+          <thead>
+            <tr>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Gender</td>
+                <td>Edit</td>
+                <td>Delete</td>
+            </tr>
+          </thead>
+          <tbody id="tablebody">
+           
+          </tbody>
+    </table>
+    </div>
+    <div class="model" id="model">
+        <div class="modify">
+ 
+            <span>&times;</span>
+            <h3>Information change:</h3>
+            <form id="newformsubmit">
+        <label for="username">Enter name</label>
+        <input type="text" id="edit-username" required>
+        <label for="userage">Age</label>
+        <input type="number" id="edit-userage">
+        <label>Gender</label>
+        <select id="edit-gender">
+            <option value="">Select gender</option>
+            <option value="Male" id="usergender">Male</option>
+            <option value="Female" id="usergender">Female</option>
+        </select>
+        <input type="hidden" id="index">
+        <button id="subbtn">Change</button>
+    </form>
+        </div>
+ 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
